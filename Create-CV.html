@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Generate CV</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <style type="text/css">
+            label{
+                width: 100px;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+      <div class="d-flex " id="wrapper">
+        <!-- Sidebar-->
+        <div class="border-end " id="sidebar-wrapper">
+          <div class="sidebar-heading border-bottom text-white">Connect My CV</div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-primary p-3" href="index.html">Home</a>
+                <a class="list-group-item list-group-item-action list-group-item-primary p-3" href="Create-CV.html">Create</a>
+                <a class="list-group-item list-group-item-action list-group-item-primary p-3" href="resume.html">Template</a>
+                <a class="list-group-item list-group-item-action list-group-item-primary p-3" href="update.html">Download CV</a>                   
+            </div>
+        </div>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <button class="btn btn-info" id="sidebarToggle"><i class="bi bi-arrow-left-square"></i></button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                            <li class="nav-item active"><a class="nav-link text-white" href="#!">Home</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#!">Link</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">sayali</a>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item " href="#!"> your Profile</a>
+                                    <a class="dropdown-item " href="#!">Logout</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#!">settings</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+                <div class="container-fluid">
+                  <h2 class="mt-4 text-center text-primary">Create CV</h2>
+                  
+              </div>
+                <!---------------------------------personal Details-------------------------->
+<section>
+    <div class="d-flex">
+        <div class=" col-3 p-3 m-3 bg-light border" >
+            <h3 class="text-primary">Personal Information</h3><br>
+            
+        </div>
+        <div class="col-8 p-md-5 m-3 bg-light border">
+        
+          <div class="container-fluid"> 
+            
+            <form action="post" >
+              <div class="form-group"> 
+                <label for="name">Add image :</label> 
+                <div class="btn-group">                
+                    <input type="file" name="fileupload" alt="Submit" width="48" height="48"><br><br> 
+                </div><br><br>
+                
+                <label for="name">Name :</label> 
+                <div class="btn-group">                
+                    <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required> 
+                </div><br><br>
+				
+				<label for="name">Title :</label> 
+                <div class="btn-group">                
+                    <input type="text" class="form-control" id="title" placeholder="Enter Title" name="title" required> 
+                </div><br><br>
+             
+                <label for="number">Phone no. :</label> 
+                <div class="btn-group">      
+                    <input type="tel" class="form-control" id="number" placeholder="Enter Phone no" name="number" required>
+                </div><br><br>
+    
+                <label for="name">Email:</label> 
+                <div class="btn-group">      
+                    <input type="email" class="form-control" id="email" placeholder="Enter Email" name="name" required> 
+                </div><br><br>
+    
+                <label for="number">linkedIn id:</label> 
+                <div class="btn-group">      
+                <input type="tel" class="form-control" id="number" placeholder="Enter NPI no" name="number" required>
+                </div><br><br>
+    
+                <label for="location">Address :</label> 
+                <div class="btn-group">      
+                    <input type="Location" class="form-control" id="l" placeholder="Enter Location " name="location" required> 
+                </div><br><br>
+    
+                <button type="submit" class="btn btn-primary" formtarget="_blank"> Save </button>
+                
+                
+            </form>
+            </div>
+          </div>      
+     </div>
+     </section>
+     <!---------------------------------Object-------------------------------->
+     <section>
+    <div class="d-flex">
+        <div class=" col-3 p-3 m-3 bg-light border" >
+            <h3 class="text-primary">Objective</h3><br>
+            
+        </div>
+        <div class="col-8 p-md-5 m-3 bg-light border">
+        
+          <div class="container-fluid  "> 
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form ">
+                      
+                      <div class="form-group">
+                        <label for="name">Object</label><br>
+                        <textarea class="form-control" name="message" rows="10" required></textarea>
+                      </div><br><br>
+                      <div class="text-center"><button class="btn btn-primary" type="submit">save</button>             
+                    </form>
+            </div>
+          </div>      
+     </div>
+     </section>
+     <!-----------------------------Education--------------------------->
+     <section>
+    <div class="d-flex">
+        <div class=" col-3 p-3 m-3 bg-light border">
+            <h3 class="text-primary">Education</h3><br>
+            
+        </div>
+        <div class="col-8 p-md-5 m-3 bg-light border">
+        
+          <div class="container-fluid  "> 
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form ">
+                        <div class="form-group">
+                          <label for="name">Course/Degree</label>
+                          <input type="text" name="degree" class="form-control" id="d">
+                        </div><br>
+                     
+                      <div class="form-group">
+                        <label for="name">School/University</label>
+                        <input type="text" class="form-control" name="university" id="u">
+                      </div><br>
+                      <div class="row">
+                        <div class="form-group col-md-6">
+                          <label for="name">Start Date</label>
+                          <input type="date" name="start" class="form-control" id="d" required>
+                        </div><br>
+                        <div class="form-group col-md-6">
+                          <label for="name">End Date </label>
+                          <input type="date" class="form-control" name="end" id="d" required>
+                        </div>
+                      </div>				  
+                      <br>
+                      <div class="row">
+                        <div class="form-group col-md-6">
+                         <label for="number">Grade/Score :</label> 					     
+                        <input type="number" class="form-control" id="s" placeholder="Score" name="number" required>
+                        
+                        </div><br><br>
+                        <div class="form-group col-md-6">
+                        <label for="number">Year :</label> 					      
+                        <input type="number" class="form-control" id="Y" placeholder="Score" name="number" required>
+                        </div></div><br><br>
+                      
+                      <div class="text-center"><button class="btn btn-primary" type="submit">save</button>                      
+                    </form>
+            </div>
+          </div>      
+     </div>
+     </section>
+     <!------------------------Skills---------------------------------->
+     <section>
+    <div class="d-flex">
+        <div class=" col-3 p-3 m-3 bg-light border">
+            <h3 class="text-primary">Skills</h3><br>
+            
+        </div>
+        <div class="col-8 p-md-5 m-3 bg-light border">
+        
+          <div class="container-fluid  "> 
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form ">
+                      
+                      <div class="form-group">
+                        <label for="name">Skill-1</label>
+                        <input type="text" class="form-control" name="skill" id="s" required>
+                      </div><br>
+                      <div class="form-group">
+                        <label for="name">Skill-2</label>
+                        <input type="text" class="form-control" name="skill" id="s" required>
+                      </div><br>
+                      
+                      <div class="text-center"><button class="btn btn-primary" type="submit">Save</button></div>
+                    </form>
+            </div>
+          </div>      
+     </div>
+     </section>
+     <!-----------------------------------Experience---------------------->
+     <section>
+    <div class="d-flex">
+        <div class=" col-3 p-3 m-3 bg-light border" >
+            <h3 class="text-primary">Experience</h3><br>
+            
+        </div>
+        <div class="col-8 p-md-5 m-3 bg-light border">
+        
+          <div class="container-fluid  "> 
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form ">
+                      
+                        <div class="form-group ">
+                          <label class="col-md-6" for="name">Company Name</label>
+                          <input type="text" name="name" class="form-control" id="name" required>
+                        </div><br>
+                        <div class="form-group ">
+                          <label for="name">Job Title</label>
+                          <input type="text" class="form-control" name="text" id="t" required>
+                        </div><br>
+                        
+                        <div class="row">
+                        <div class="form-group col-md-6">
+                          <label for="name">Start Date</label>
+                          <input type="date" name="start" class="form-control" id="d" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="name">End Date </label>
+                          <input type="date" class="form-control" name="end" id="d" required>
+                        </div>
+                      </div>				  
+                      <br>
+                      <div class="form-group">
+                        <label for="name">Detail</label>
+                        <textarea class="form-control" name="message" rows="10" required></textarea>
+                      </div><br><br>
+                      <div class="text-center"><button class="btn btn-primary" type="submit">save</button></div>
+                    </form>
+            </div>
+          </div>      
+     </div>
+     </section>
+     <!-------------------------Project--------------------------->
+     <section>
+    <div class="d-flex">
+        <div class=" col-3 p-3 m-3 bg-light border">
+            <h3 class="text-primary">Project</h3><br>
+            
+        </div>
+        <div class="col-8 p-md-5 m-3 bg-light border">
+        
+          <div class="container-fluid  "> 
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form ">
+                      <div class="form-group">
+                        <label for="name">Title</label>
+                        <input type="text" class="form-control" name="subject" id="subject" required>
+                      </div><br>
+                      <div class="form-group">
+                        <label for="name">Discription</label>
+                        <textarea class="form-control" name="message" rows="10" required></textarea>
+                      </div><br><br>
+                      <div class="text-center"><button class="btn btn-primary" type="submit">Send Message</button></div>
+                    </form>
+            </div>
+          </div>      
+     </div>
+     </section><br>
+     <div class="text-center"><button class="btn btn-info col-8 m-md-5" type="submit">Submit</button></div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
